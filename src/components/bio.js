@@ -44,23 +44,17 @@ const Bio = () => {
         fixed={data.avatar.childImageSharp.fixed}
         alt={author}
         style={{
-          marginRight: rhythm(1 / 2),
+          marginRight: rhythm(1 / 3),
           marginBottom: 0,
-          minWidth: 50,
+          minWidth: 75,
+          minHeight: 75,
           borderRadius: `100%`,
         }}
         imgStyle={{
           borderRadius: `50%`,
         }}
       />
-      <p>
-        Written by <strong>{author}</strong> who lives and works in San
-        Francisco building useful things.
-        {` `}
-        <a href={`https://twitter.com/${social.twitter}`}>
-          You should follow him on Twitter
-        </a>
-      </p>
+      <p>I live in Carrollton, GA and study Computer Science at <a href="https://www.westga.edu/academics/cosm/computer-science/index.php">The University of West Georgia.</a></p>
     </div>
   )
 }

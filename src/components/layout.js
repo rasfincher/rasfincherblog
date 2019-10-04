@@ -16,6 +16,7 @@ class Layout extends React.Component {
             ...scale(1.5),
             marginBottom: rhythm(1.5),
             marginTop: 0,
+            fontFamily: `Futura, sans-serif`,
           }}
         >
           <Link
@@ -32,9 +33,9 @@ class Layout extends React.Component {
       )
     } else {
       header = (
-        <h3
+        <h1
           style={{
-            fontFamily: `Montserrat, sans-serif`,
+            fontFamily: `Futura, sans-serif`,
             marginTop: 0,
           }}
         >
@@ -48,7 +49,13 @@ class Layout extends React.Component {
           >
             {title}
           </Link>
-        </h3>
+          <hr
+            style={{
+              marginTop: `4px`,
+              borderTop: `1px solid #333333`,
+            }}
+          />
+        </h1>
       )
     }
     return (

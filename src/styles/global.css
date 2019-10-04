@@ -1,0 +1,36 @@
+html {
+    background-color: #44475a;
+}
+
+h1 {
+    color: #bd83f9;
+    text-shadow: 3px 3px #282a36;
+    font-size: 32px;
+}
+
+h3 {
+    color: #bd83f9;
+    text-shadow: 3px 3px #282a36;
+    font-size: 26px;
+}
+
+p {
+    color: #f8f8f2;
+}
+
+a {
+    color: #bd83f9;
+}
+
+small {
+    color: #ffffff;
+    font-size: 12px;
+}
+
+a:hover {
+    color: #bd93e1;
+}
+
+footer {
+    color: #f8f8f2;
+}
