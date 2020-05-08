@@ -5,11 +5,11 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import Image from "gatsby-image"
+import React from "react";
+import { useStaticQuery, graphql } from "gatsby";
+import Image from "gatsby-image";
 
-import { rhythm } from "../utils/typography"
+import { rhythm } from "../utils/typography";
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
@@ -30,9 +30,9 @@ const Bio = () => {
         }
       }
     }
-  `)
+  `);
 
-  const { author, social } = data.site.siteMetadata
+  const { author, social } = data.site.siteMetadata;
   return (
     <div
       style={{
@@ -54,14 +54,9 @@ const Bio = () => {
           borderRadius: `50%`,
         }}
       />
-      <p>
-        I live in Carrollton, GA and study Computer Science at{" "}
-        <a href="https://www.westga.edu/academics/cosm/computer-science/index.php">
-          The University of West Georgia.
-        </a>
-      </p>
+      <p>I'm a software engineer living in Carrollton, GA.</p>
     </div>
-  )
-}
+  );
+};
 
-export default Bio
+export default Bio;
