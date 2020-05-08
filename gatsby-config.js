@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Ras Fincher`,
     author: `Ras Fincher`,
-    description: `A blog about school, work, and things I find interesting.`,
+    description: `A blog about work, life, and things I find interesting.`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
     social: {
       twitter: `rasfincher`,
@@ -47,6 +47,14 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        useMozJpeg: false,
+        stripMetadata: true,
+        defaultQuality: 75,
+      },
+    },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {

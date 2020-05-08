@@ -16,7 +16,7 @@ const Bio = () => {
     query BioQuery {
       avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
         childImageSharp {
-          fixed(width: 50, height: 50) {
+          fixed(width: 75, height: 75) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -54,7 +54,12 @@ const Bio = () => {
           borderRadius: `50%`,
         }}
       />
-      <p>I live in Carrollton, GA and study Computer Science at <a href="https://www.westga.edu/academics/cosm/computer-science/index.php">The University of West Georgia.</a></p>
+      <p>
+        I live in Carrollton, GA and study Computer Science at{" "}
+        <a href="https://www.westga.edu/academics/cosm/computer-science/index.php">
+          The University of West Georgia.
+        </a>
+      </p>
     </div>
   )
 }
