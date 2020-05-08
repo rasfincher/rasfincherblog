@@ -3,7 +3,7 @@ module.exports = {
     title: `Ras Fincher`,
     author: `Ras Fincher`,
     description: `A blog about work, life, and things I find interesting.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    siteUrl: `https://www.rasfincher.com`,
     social: {
       twitter: `rasfincher`,
     },
@@ -65,8 +65,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Ras Fincher`,
+        short_name: `Ras Fincher`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
@@ -83,4 +83,4 @@ module.exports = {
       },
     },
   ],
-}
+};
